@@ -16,7 +16,19 @@ const App = () => {
   return (
     <div className="App">
       {
-        people.map(person => <CharacterCard />)
+        people.map((person, index) => 
+          <CharacterCard 
+            key={index}
+            name={person.name}
+            height={person.height}
+            mass={person.mass} 
+            hairColor={person.hair_color}
+            skinColor={person.skin_color}
+            eyeColor={person.eye_color}
+            birthYear={person.birth_year}
+            gender={person.gender}  
+            homeworld={person.homeworld}
+          />)
       }
     </div>
   );
