@@ -26,13 +26,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    <strong>Answer:</strong> React JS is a JavaScript library created by Facebook that allows developers to create Reusable Components in JavaScript, while incorporating JSX. JSX is what allows you to write HTML-like code, within JavaScript. Ultimately React allows the possibility of abstracting out HTML, and CSS, and coding your application purely with JavaScript, in React.
+
 - [ ] What does it mean to _think_ in react?
+
+    <strong>Answer:</strong> Thinking in React is having the mentality of how to organize, and structure your files, and how to compartamentlize your components. Thinking in React means the developer thinks about how the page is rendering, and how to minimize their chances of repeating their code with React components.
 
 - [ ] Describe state.
 
+    <strong>Answer:</strong> React State is essentially an object that lives within the React component. It contains an inital value, and a setter function - which can be used to update the state. State is used to keep track of things such as: totals, booleans, strings, or any data you may want to manipulate later.
+
 - [ ] Describe props.
 
+    <strong>Answer:</strong> React Props is the ability to pass data from one component, to another, and also between files. With React, your components are typically all separate, and with props you can pass down information like state, or other variables, from the parent component to be used by the child.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    <strong>Answer:</strong> A side effect is when a function modifies anything outside of itself, for example manipulating a variable (or state), or making an API call. You can sync effects in React components with `useEffect()`. This will be triggered whenever the component is mounted, or re-rendered. By including the state or props key name, you can insert it into an array at the end of the `useEffect()`. Resulting in the `useEffect()` running only when that piece of data is manipulated.
+
+
 
 ## Project Set Up
 
